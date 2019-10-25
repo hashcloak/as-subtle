@@ -41,6 +41,6 @@ export function constCopy(a: u32, x: i32[], y: i32[]) {
 
 }
 
-export function constLE(): i32 {
-
+export function constLE(a: i32, b: i32): i32 {
+    return (((a - b - 1) >> 31) & 1);
 }
