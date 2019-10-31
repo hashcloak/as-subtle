@@ -9,10 +9,10 @@ export function constArrayCompare(a: i32[], b: i32[]): i32 {
     let length: i32 = a.length;
 
     for (let i = 0; i < length; i++) {
-        c = c | (x[i] ^ y[i]);
+        c = c | (a[i] ^ b[i]);
     }
 
-    return constEq32(c, 0);
+    return constEq(c, 0);
 }
 
 export function constSelect32(a: i32, b: i32, c: i32 ): i32 {
