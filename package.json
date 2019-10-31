@@ -3,5 +3,29 @@
     "asbuild:untouched": "asc assembly/index.ts -b build/untouched.wasm -t build/untouched.wat --sourceMap --validate --debug",
     "asbuild:optimized": "asc assembly/index.ts -b build/optimized.wasm -t build/optimized.wat --sourceMap --validate --optimize",
     "asbuild": "npm run asbuild:untouched && npm run asbuild:optimized"
+  },
+  "name": "subtle",
+  "description": "An AssemblyScript module for constant-time APIs. This module is heavily modelled after the [Go subtle package](https://golang.org/pkg/crypto/subtle/) and Dalek Cryptography's [Rust subtle crate](https://github.com/dalek-cryptography/subtle).",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mikerah/as-subtle.git"
+  },
+  "keywords": [
+    "cryptography",
+    "assemblyscript",
+    "\"constant",
+    "time\""
+  ],
+  "author": "Mikerah",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mikerah/as-subtle/issues"
+  },
+  "homepage": "https://github.com/Mikerah/as-subtle#readme",
+  "devDependencies": {
+    "assemblyscript": "github:AssemblyScript/assemblyscript",
+    "typescript": "^3.6.4"
   }
 }
